@@ -2,7 +2,7 @@
   "name": "jimsegal-admin",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Admin panel for jimsegal.com projects",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -14,18 +14,18 @@
     "knex": "<0.20.0",
     "pg": "latest",
     "pg-connection-string": "^2.4.0",
-    "strapi": "3.4.4",
-    "strapi-admin": "3.4.4",
-    "strapi-connector-bookshelf": "3.4.4",
-    "strapi-plugin-content-manager": "3.4.4",
-    "strapi-plugin-content-type-builder": "3.4.4",
-    "strapi-plugin-email": "3.4.4",
-    "strapi-plugin-upload": "3.4.4",
-    "strapi-plugin-users-permissions": "3.4.4",
-    "strapi-utils": "3.4.4"
+    "strapi": "3.4.6",
+    "strapi-admin": "3.4.6",
+    "strapi-connector-bookshelf": "3.4.6",
+    "strapi-plugin-content-manager": "3.4.6",
+    "strapi-plugin-content-type-builder": "3.4.6",
+    "strapi-plugin-email": "3.4.6",
+    "strapi-plugin-upload": "3.4.6",
+    "strapi-plugin-users-permissions": "3.4.6",
+    "strapi-utils": "3.4.6"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Jim Segal"
   },
   "strapi": {
     "uuid": "4f78b7d1-e30f-47ff-9da2-053426b35070"
