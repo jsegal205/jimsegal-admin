@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/recipes/:id",
+      "path": "/recipes/:slug",
       "handler": "recipe.findOne",
       "config": {
         "policies": []

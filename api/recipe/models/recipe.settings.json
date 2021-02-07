@@ -15,10 +15,6 @@
       "type": "string",
       "required": true
     },
-    "slug": {
-      "type": "string",
-      "required": false
-    },
     "referenceLink": {
       "type": "string"
     },
@@ -32,6 +28,10 @@
     },
     "notes": {
       "type": "richtext"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }
