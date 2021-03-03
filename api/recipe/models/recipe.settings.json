@@ -30,8 +30,8 @@
       "type": "richtext"
     },
     "slug": {
-      "type": "uid",
-      "targetField": "title"
+      "type": "string",
+      "unique": true
     }
   }
 }
