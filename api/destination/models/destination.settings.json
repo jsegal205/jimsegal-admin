@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "destinations",
+  "info": {
+    "name": "Destination",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": ["id", "created_at", "published_at", "updated_at"]
+  },
+  "attributes": {
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "float",
+      "required": true
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "destination_visits": {
+      "via": "destination",
+      "collection": "destination-visits"
+    }
+  }
+}

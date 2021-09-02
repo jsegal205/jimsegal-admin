@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "destination_visits",
+  "info": {
+    "name": "Destination Visits",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "id",
+      "created_at",
+      "destination",
+      "published_at",
+      "updated_at"
+    ]
+  },
+  "attributes": {
+    "destination": {
+      "via": "destination_visits",
+      "model": "destination"
+    },
+    "visit_date": {
+      "type": "date",
+      "required": true
+    }
+  }
+}
