@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "games",
+  "info": {
+    "singularName": "game",
+    "pluralName": "games",
+    "displayName": "Game",
+    "name": "game"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "id",
+      "created_at",
+      "published_at",
+      "updated_at"
+    ]
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "bgg_id": {
+      "type": "integer"
+    }
+  }
+}
