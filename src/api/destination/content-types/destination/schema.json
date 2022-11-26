@@ -11,12 +11,7 @@
     "increments": true,
     "timestamps": true,
     "draftAndPublish": true,
-    "privateAttributes": [
-      "id",
-      "created_at",
-      "published_at",
-      "updated_at"
-    ]
+    "privateAttributes": ["id", "createdAt", "publishedAt", "updatedAt"]
   },
   "attributes": {
     "city": {
@@ -28,14 +23,16 @@
       "required": true
     },
     "country": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "latitude": {
       "type": "float",
       "required": true
     },
     "longitude": {
-      "type": "float"
+      "type": "float",
+      "required": true
     },
     "destination_visits": {
       "type": "relation",

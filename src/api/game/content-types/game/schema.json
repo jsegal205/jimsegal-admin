@@ -11,25 +11,24 @@
     "increments": true,
     "timestamps": true,
     "draftAndPublish": true,
-    "privateAttributes": [
-      "id",
-      "created_at",
-      "published_at",
-      "updated_at"
-    ]
+    "privateAttributes": ["id", "createdAt", "publishedAt", "updatedAt"]
   },
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "image_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "bgg_id": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     }
   }
 }

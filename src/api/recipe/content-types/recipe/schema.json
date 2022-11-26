@@ -11,12 +11,7 @@
     "increments": true,
     "timestamps": true,
     "draftAndPublish": true,
-    "privateAttributes": [
-      "id",
-      "created_at",
-      "published_at",
-      "updated_at"
-    ]
+    "privateAttributes": ["id", "createdAt", "publishedAt", "updatedAt"]
   },
   "attributes": {
     "title": {
