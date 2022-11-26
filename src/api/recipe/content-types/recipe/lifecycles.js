@@ -4,14 +4,24 @@ module.exports = {
   /**
    * Triggered before user creation.
    */
-  async beforeCreate(data) {
+  beforeCreate(event) {
+    const { data } = event.params;
+
     if (data.title) {
-      data.slug = slugify(data.title, { lower: true, strict: true });
+      event.params.data.slug = slugify(data.title, {
+        lower: true,
+        strict: true,
+      });
     }
   },
-  async beforeUpdate(params, data) {
+  beforeUpdate(event) {
+    const { data } = event.params;
+
     if (data.title) {
-      data.slug = slugify(data.title, { lower: true, strict: true });
+      event.params.data.slug = slugify(data.title, {
+        lower: true,
+        strict: true,
+      });
     }
   },
 };
