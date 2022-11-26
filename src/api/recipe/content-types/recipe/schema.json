@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipes",
+  "info": {
+    "singularName": "recipe",
+    "pluralName": "recipes",
+    "displayName": "Recipe",
+    "name": "recipe"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": ["id", "createdAt", "publishedAt", "updatedAt"]
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "referenceLink": {
+      "type": "string"
+    },
+    "ingredients": {
+      "type": "richtext",
+      "required": true
+    },
+    "directions": {
+      "type": "richtext",
+      "required": true
+    },
+    "notes": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}

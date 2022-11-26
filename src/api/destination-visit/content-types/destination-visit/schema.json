@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "destination_visits",
+  "info": {
+    "singularName": "destination-visit",
+    "pluralName": "destination-visits",
+    "displayName": "Destination-visit",
+    "name": "destination-visit"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": ["id", "createdAt", "publishedAt", "updatedAt"]
+  },
+  "attributes": {
+    "destination": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::destination.destination",
+      "inversedBy": "destination_visits"
+    },
+    "visit_date": {
+      "type": "date",
+      "required": true
+    }
+  }
+}
