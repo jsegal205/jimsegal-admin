@@ -11,12 +11,16 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "@strapi/plugin-users-permissions": "4.15.5",
+    "@strapi/strapi": "4.15.5",
     "knex": "<0.20.0",
     "pg": "latest",
     "pg-connection-string": "^2.4.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^5.2.0",
     "slugify": "^1.4.6",
-    "@strapi/strapi": "4.5.2",
-    "@strapi/plugin-users-permissions": "4.5.2"
+    "styled-components": "^5.2.1"
   },
   "author": {
     "name": "Jim Segal"
@@ -25,8 +29,8 @@
     "uuid": "4f78b7d1-e30f-47ff-9da2-053426b35070"
   },
   "engines": {
-    "node": ">=14.19.1 <=16.x.x",
-    "npm": ">=6.0.0"
+    "node": ">=18.x.x",
+    "npm": ">=10.0.0"
   },
   "license": "MIT"
 }
